@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph.xml"
+    app:startDestination="@id/feed_fragment">
+
+    <fragment
+        android:id="@+id/feed_fragment"
+        android:name="umang.kamboj.navigation_ui.view.fragment.FeedFragment"
+        android:label="Feed"
+        tools:layout="@layout/fragment_feed"/>
+
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="umang.kamboj.navigation_ui.view.fragment.EditFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile"/>
+
+    <fragment
+        android:id="@+id/edit_fragment"
+        android:name="umang.kamboj.navigation_ui.view.fragment.ProfileFragment"
+        android:label="@string/title_edit"
+        tools:layout="@layout/fragment_edit"/>
+
+    <fragment
+        android:id="@+id/setting_fragment"
+        android:name="umang.kamboj.navigation_ui.view.fragment.SettingFragment"
+        android:label="@string/title_setting"
+        tools:layout="@layout/fragment_setting"/>
+
+</navigation>
